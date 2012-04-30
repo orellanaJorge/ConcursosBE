@@ -237,10 +237,7 @@ a:visited {
        
         <table width="1046" border="0">        
           <tr>
-            <%
-
-            if(f.getEstadoCategoria().trim().equals("Sube")){
-            %>
+            
             <%if (!LlenaSliders[loopMatriz][1].trim().equals("FIN")) {%>
             <td width="610" rowspan="3">
             <div id="gallery" class="ad-gallery"> 
@@ -288,21 +285,7 @@ a:visited {
                 </table></td>
 
             <%}%>
-            <%}else{%>
             
-            <td width="52" rowspan="3"><table width="200" border="0" align="center" cellspacing="0">
-              <tr>
-                <td><table border="0" align="center">
-                  <tr>
-                    <td>
-                     sdgsdgsdgsdgs
-                    </td>
-                  </tr>
-                </table></td>
-              </tr>
-            </table></td>
-            
-            <%}%>
 
 
             <td width="673">
