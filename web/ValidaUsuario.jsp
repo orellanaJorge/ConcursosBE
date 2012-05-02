@@ -5,11 +5,14 @@
 <%
             String user = request.getParameter("username");
             String pass = request.getParameter("password");
-
+            user = user.replace("k","K");
             try {
                 Sqls sqlGatilla = new Sqls();
                 String[][] Matriz = new String[100][100];
                 Matriz = sqlGatilla.SQL_LlenaObjetoSessionUsuario(user, pass);
+
+
+
 
                 String codigoUsuario = Matriz[1][1].trim();
                 String nombreCategoria = "";
