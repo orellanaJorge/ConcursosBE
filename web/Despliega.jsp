@@ -17,16 +17,8 @@
                 response.sendRedirect("index.jsp");
             } else {
                 String imagen = request.getParameter("imagen");
-
-//String vota = (String)objSesion.getAttribute("vota");
-                String vota = request.getParameter("b");
-                ;
-                request.getParameter("imagen");
-
-//String usuario = (String)objSesion.getAttribute("usuario");
-
+                String vota = request.getParameter("b");                
                 String usuario = request.getParameter("a");
-                ;
                 String sucursal = request.getParameter("sucursal");
                 String idfoto = request.getParameter("idfoto");
 
@@ -60,7 +52,7 @@
                 }
 
                 Concurso.ObtieneProperties f = new Concurso.ObtieneProperties();
-                String ruta = ruta = f.getRuta();
+                String ruta = f.getRuta();
 
 
 %>
@@ -122,7 +114,7 @@
                         <tr>
                             <td><span class="gg">Campaña</span></td>
                             <td><span class="gg">:</span></td>
-                            <td><span class="gg"><%=f.getCodigoConcurso()%> - Cajas</span></td>
+                            <td><span class="gg"><%=f.getCodigoConcurso()%> - <%=f.getNombreCategoria()%></span></td>
                         </tr>
                         <tr>
                             <td><span class="gg">Votación</span></td>
