@@ -277,8 +277,7 @@ color: #FFF;
                   <tr>
                     <td><table border="0" align="center">
                       <tr>
-                        <td>
-                            <img src="Img/AvisoConcurso.jpg" width="294" height="352">
+                        <td>                       
                         <%if (f.getCodigoCategoria().trim().equals("1")){%><img src="Img/Aes.jpg" width="294" height="352"><%}%>
                         <%if (f.getCodigoCategoria().trim().equals("2")){%><img src="Img/Aca.jpg" width="294" height="352"><%}%>
                         <%if (f.getCodigoCategoria().trim().equals("3")){%><img src="Img/Ase.jpg" width="294" height="352"><%}%>
